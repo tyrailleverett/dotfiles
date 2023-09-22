@@ -114,7 +114,14 @@ require("lazy").setup({
       opts = {},
     },
       "neanias/everforest-nvim",
-      "shortcuts/no-neck-pain.nvim",
+      {
+        "shortcuts/no-neck-pain.nvim",
+        opts = {
+          autocmds = {
+            enableOnVimEnter = true,
+          }
+        },
+      },
       "lewis6991/gitsigns.nvim",
       {
         "folke/which-key.nvim",

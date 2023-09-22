@@ -1,3 +1,5 @@
-require("no-neck-pain").setup()
+require("no-neck-pain").setup({
+    width = 140,
+})
 
-vim.keymap.set("n", "<leader>cd", ":NoNeckPain<CR>")
+vim.keymap.set("n", "<leader>nnp", ":NoNeckPain<CR>")
